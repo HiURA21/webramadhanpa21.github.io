@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Materi 3</title>
+    <link rel="stylesheet" href="css/style.css"/>
+    
+    <style>
+        /* Reset default margin and padding */
+body, h1, h2, ul, li, p {
+  margin: 0;
+  padding: 0;
+}
+
+/* Set the background image for the body */
+body {
+  background-image: url(image/BG\ \(3\).jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  font-family: 'Lucida Sans'; /* Set a fallback font family */
+  color: #000; /* Set the default text color to black */
+}
+
+/* Style the header */
+header {
+  text-align: center;
+  padding: 20px;
+  background-color: #fff; /* Set the background color of the header */
+  opacity: 0.8; /* Set the opacity of the header */
+}
+
+/* Style the h1 in the header */
+header h1 {
+  font-size: 50px;
+  font-weight: bold;
+}
+
+/* Style the navigation menu */
+.container-navbar {
+  background-color: rgba(255, 255, 255, 0.8); /* Set a semi-transparent white background */
+  padding: 10px;
+}
+
+.container-navbar ul {
+  list-style-type: none;
+  text-align: center;
+}
+
+.container-navbar ul li {
+  display: inline;
+  margin-right: 20px;
+  font-size: 20px;
+}
+
+.container-navbar ul li a {
+  text-decoration: none;
+  color: #000; /* Set link color to black */
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Style the main content container */
+.materi {
+  text-align: center;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.8); /* Set a semi-transparent white background */
+  margin-top: 20px;
+}
+
+/* Style the heading inside the main content */
+.materi h1 {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.materi h2 {
+  font-size: 35px;
+  font-weight: bold;
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #fff;
+  opacity: 0.8;
+  position: none;
+  bottom: 0;
+  width: auto;
+  }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>BASIS DATA</h1>
+      </header>
+    <div class="container-navbar">
+        <ul>
+          <li><a href="index.html">HOME</a></li>
+          <li class="dropdown">
+            <a href="javascript:void(0)">MATERI</a>
+            <div class="dropdown-content">
+              <a href="Materi.html">Materi 1</a>
+              <a href="Materi2.html">Materi 2</a>
+              <a href="Materi3.html">Materi 3</a>
+              <a href="Materi4.html">Materi 4</a>
+              <a href="Materi5.html">Materi 5</a>
+            </div>
+          </li>
+          <li><a href="https://cvramadhanpa.000webhostapp.com/">ABOUT ME</a></li>
+        </ul>
+    </div>
+
+    <div class="materi">
+        <h1>Relation pada ERD?</h1>
+    </div>    
+    <p style="font-size:25px;margin-left: 15px; margin-top: 0px; margin-bottom: 0px;">Pada Entity Relationship Diagram (ERD), "relation" mengacu pada hubungan antara entitas. Entitas adalah objek atau elemen yang memiliki atribut atau properti yang relevan. Terdapat beberapa jenis hubungan antara entitas dalam ERD, yaitu:</p>
+    <br>
+    <p style="font-size:25px;margin-left: 15px; margin-top: 0px; margin-bottom: 0px;">1. One-to-One (1:1): Ini berarti satu entitas terkait dengan satu entitas lainnya. Misalnya, satu anggota perpustakaan hanya memiliki satu nomor identitas.</p>
+    <br>
+    <p style="font-size:25px;margin-left: 15px; margin-top: 0px; margin-bottom: 0px;">2. One-to-Many (1:N): Ini berarti satu entitas terkait dengan banyak entitas lainnya. Contohnya, satu perpustakaan memiliki banyak buku.</p>
+    <br>
+    <p style="font-size:25px;margin-left: 15px; margin-top: 0px; margin-bottom: 0px;">3. Many-to-One (N:1): Ini sebaliknya dari One-to-Many, berarti banyak entitas terkait dengan satu entitas lainnya. Misalnya, banyak anggota perpustakaan terdaftar di satu perpustakaan.</p>
+    <br>
+    <p style="font-size:25px;margin-left: 15px; margin-top: 0px; margin-bottom: 0px;">4. Many-to-Many (N:N): Ini berarti banyak entitas terkait dengan banyak entitas lainnya. Contohnya, banyak mahasiswa terdaftar dalam banyak mata kuliah dan sebaliknya.</p>
+    <br>
+    <p style="font-size:25px;margin-left: 15px; margin-top: 0px; margin-bottom: 0px;">Hubungan ini digambarkan dalam diagram ERD dengan menggunakan tanda panah dan notasi yang sesuai. Hubungan-hubungan ini memungkinkan untuk merepresentasikan interaksi dan ketergantungan antara entitas dalam basis data dan sangat penting dalam merancang basis data yang baik. </p>
+    
+    <div class="materi">
+        <h2>Mengapa Many-to-Many tidak baik digunakan pada ERD?</h2>
+    </div>
+    <p style="font-size:25px;margin-left: 15px; margin-top: 0px; margin-bottom: 0px;">Karena hubungan "Many-to-Many" dalam ERD bisa rumit dan sulit dikelola dalam basis data. Ada beberapa alasan mengapa many-to-many sangat tidak disarankan dalam ERD:</p>
+    <br>
+    <p style="font-size:25px;margin-left: 15px; margin-top: 0px; margin-bottom: 0px;">1. Kesulitan dalam Implementasi: Dalam database relasional, hubungan many-to-many harus dipecah menjadi dua hubungan one-to-many melalui entitas penghubung. Hal ini bisa meningkatkan kompleksitas dan membingungkan.</p>
+    <br>
+    <p style="font-size:25px;margin-left: 15px; margin-top: 0px; margin-bottom: 0px;">2. Kemungkinan Duplikasi Data: Pada many-to-many, ada risiko duplikasi data. Jika entitas yang sama muncul dalam hubungan berbeda, ini bisa menghasilkan data yang tidak konsisten.</p>
+    <br>
+    <p style="font-size:25px;margin-left: 15px; margin-top: 0px; margin-bottom: 0px;">3. Kesulitan dalam Kueri Data: Kueri yang melibatkan hubungan many-to-many bisa menjadi lebih rumit dan lambat dibandingkan dengan hubungan one-to-many atau one-to-one.</p>
+    <br>
+    <p style="font-size:25px;margin-left: 15px; margin-top: 0px; margin-bottom: 0px;">Sebagai gantinya, dalam desain basis data, biasanya lebih disarankan untuk mencoba memodelkan hubungan many-to-many menjadi dua hubungan one-to-many melalui entitas penghubung atau tabel penyambung. Ini membuat basis data lebih terstruktur dan lebih mudah dikelola. </p>
+  
+    <footer>
+      <p>&copy; 2023 Ramadhan Putra A. All Rights Reserved.</p>
+    </footer>  
+  </body>
+</html>

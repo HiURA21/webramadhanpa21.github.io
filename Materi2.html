@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Materi 2</title>
+    <link rel="stylesheet" href="css/style.css"/>
+    
+    <style>
+        /* Reset default margin and padding */
+body, h1, h2, ul, li, p {
+  margin: 0;
+  padding: 0;
+}
+
+/* Set the background image for the body */
+body {
+  background-image: url(image/BG\ \(3\).jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  font-family: 'Lucida Sans'; /* Set a fallback font family */
+  color: #000; /* Set the default text color to black */
+}
+
+/* Style the header */
+header {
+  text-align: center;
+  padding: 20px;
+  background-color: #fff; /* Set the background color of the header */
+  opacity: 0.8; /* Set the opacity of the header */
+}
+
+/* Style the h1 in the header */
+header h1 {
+  font-size: 50px;
+  font-weight: bold;
+}
+
+/* Style the navigation menu */
+.container-navbar {
+  background-color: rgba(255, 255, 255, 0.8); /* Set a semi-transparent white background */
+  padding: 10px;
+}
+
+.container-navbar ul {
+  list-style-type: none;
+  text-align: center;
+}
+
+.container-navbar ul li {
+  display: inline;
+  margin-right: 20px;
+  font-size: 20px;
+}
+
+.container-navbar ul li a {
+  text-decoration: none;
+  color: #000; /* Set link color to black */
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Style the main content container */
+.materi {
+  text-align: center;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.8); /* Set a semi-transparent white background */
+  margin-top: 20px;
+}
+
+/* Style the heading inside the main content */
+.materi h1 {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.materi h3 {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #fff;
+  opacity: 0.8;
+  position: none;
+  bottom: 0;
+  width: auto;
+  }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>BASIS DATA</h1>
+      </header>
+    <div class="container-navbar">
+        <ul>
+          <li><a href="index.html">HOME</a></li>
+          <li class="dropdown">
+            <a href="javascript:void(0)">MATERI</a>
+            <div class="dropdown-content">
+              <a href="Materi.html">Materi 1</a>
+              <a href="Materi2.html">Materi 2</a>
+              <a href="Materi3.html">Materi 3</a>
+              <a href="Materi4.html">Materi 4</a>
+              <a href="Materi5.html">Materi 5</a>
+            </div>
+          </li>
+          <li><a href="https://cvramadhanpa.000webhostapp.com/">ABOUT ME</a></li>
+        </ul>
+    </div>
+
+    <div class="materi">
+        <h1>SQL</h1>
+    </div>    
+    <p style="font-size:25px;margin-left: 15px; margin-top: 0px; margin-bottom: 0px;">SQL (Structured Query Language) adalah bahasa pemrograman yang digunakan untuk mengelola dan mengakses basis data relasional. SQL digunakan untuk melakukan berbagai tugas yang berkaitan dengan database, termasuk pengambilan (query), penyisipan, pembaruan, penghapusan data, pembuatan, dan pengelolaan tabel, serta pengelolaan hak akses pengguna ke dalam basis data.</p>
+    <br>
+    <p style="font-size:25px;margin-left: 15px; margin-top: 0px; margin-bottom: 0px;">Dalam SQL, terdapat beberapa jenis "key" yang memiliki peran yang berbeda dalam pengelolaan basis data. Berikut adalah beberapa jenis kunci (key) yang umum digunakan dalam SQL:</p>
+
+    <div class="materi">
+        <h3>1. Primary Key</h3>
+    </div>
+    <p style="font-size:25px;margin-left: 15px; margin-top: 0px; margin-bottom: 0px;">Primary Key atau kunci primer adalah satu atau beberapa kolom dalam tabel yang unik mengidentifikasi setiap baris dalam tabel. Kunci primer digunakan untuk memastikan bahwa tidak ada duplikasi data dalam tabel. Biasanya, primary key secara otomatis akan menciptakan indeks untuk mengoptimalkan pencarian. Setiap tabel biasanya hanya memiliki satu primary key, tetapi primary key dapat terdiri dari beberapa kolom.</p>
+
+    <div class="materi">
+        <h3>2. Foreign Key</h3>
+    </div>
+    <p style="font-size:25px;margin-left: 15px; margin-top: 0px; margin-bottom: 0px;">Foreign Key atau kunci asing adalah kolom atau sekumpulan kolom dalam sebuah tabel yang mengacu pada kunci primer (biasanya) di tabel lain. Kunci asing digunakan untuk membangun hubungan antara tabel, sehingga satu tabel dapat mengacu pada data dalam tabel lain. Hal ini memungkinkan untuk menerapkan integritas referensial, yang memastikan bahwa data yang diacu oleh kunci asing selalu ada.</p>
+
+    <div class="materi">
+      <h3>3. Candidate Key</h3>
+    </div>
+    <p style="font-size:25px;margin-left: 15px; margin-top: 0px; margin-bottom: 0px;">Candidate key atau kunci kandidat adalah kolom atau sekumpulan kolom dalam tabel yang memiliki potensi untuk menjadi primary key. Dengan kata lain, candidate key adalah kolom yang unik, tetapi Anda belum memutuskan untuk menggunakannya sebagai primary key.</p>
+ 
+    <footer>
+      <p>&copy; 2023 Ramadhan Putra A. All Rights Reserved.</p>
+    </footer>
+  </body>
+</html>

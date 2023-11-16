@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Materi 1</title>
+    <link rel="stylesheet" href="css/style.css"/>
+    
+    <style>
+        /* Reset default margin and padding */
+body, h1, h2, ul, li, p {
+  margin: 0;
+  padding: 0;
+}
+
+/* Set the background image for the body */
+body {
+  background-image: url(image/BG\ \(3\).jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  font-family: 'Lucida Sans'; /* Set a fallback font family */
+  color: #000; /* Set the default text color to black */
+}
+
+/* Style the header */
+header {
+  text-align: center;
+  padding: 20px;
+  background-color: #fff; /* Set the background color of the header */
+  opacity: 0.8; /* Set the opacity of the header */
+}
+
+/* Style the h1 in the header */
+header h1 {
+  font-size: 50px;
+  font-weight: bold;
+}
+
+/* Style the navigation menu */
+.container-navbar {
+  background-color: rgba(255, 255, 255, 0.8); /* Set a semi-transparent white background */
+  padding: 10px;
+}
+
+.container-navbar ul {
+  list-style-type: none;
+  text-align: center;
+}
+
+.container-navbar ul li {
+  display: inline;
+  margin-right: 20px;
+  font-size: 20px;
+}
+
+.container-navbar ul li a {
+  text-decoration: none;
+  color: #000; /* Set link color to black */
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Style the main content container */
+.materi {
+  text-align: center;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.8); /* Set a semi-transparent white background */
+  margin-top: 20px;
+}
+
+/* Style the heading inside the main content */
+.materi h1 {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+/* Style the heading inside the ERD section */
+.materi h2 {
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.materi h3 {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #fff;
+  opacity: 0.8;
+  position: none;
+  bottom: 0;
+  width: auto;
+  }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>BASIS DATA</h1>
+    </header>
+    <div class="container-navbar">
+        <ul>
+          <li><a href="index.html">HOME</a></li>
+          <li class="dropdown">
+            <a href="javascript:void(0)">MATERI</a>
+            <div class="dropdown-content">
+              <a href="Materi.html">Materi 1</a>
+              <a href="Materi2.html">Materi 2</a>
+              <a href="Materi3.html">Materi 3</a>
+              <a href="Materi4.html">Materi 4</a>
+              <a href="Materi5.html">Materi 5</a>
+            </div>
+          </li>
+          <li><a href="https://cvramadhanpa.000webhostapp.com/">ABOUT ME</a></li>
+        </ul>
+    </div>
+
+    <div class="materi">
+        <h1>Apa Itu ERD?</h1>
+    </div>    
+    <p style="font-size:25px; margin-left: 15px; margin-top: 0px; margin-bottom: 0px;">ERD (Entity Relationship Diagram) atau diagram hubungan entitas adalah sebuah diagram yang digunakan untuk perancangan suatu database dan menunjukan relasi atau hubungan antar objek atau entitas beserta atribut-atributnya secara detail. Dengan menggunakan ERD, sistem database yang sedang dibentuk dapat digambarkan dengan lebih terstruktur dan terlihat rapi.</p>
+    <br>
+    <p style="font-size:25px; margin-left: 15px; margin-top: 0px; margin-bottom: 0px;">Selain digunakan dalam perancangan database, ERD sendiri sering digunakan untuk debugging database jika terjadi masalah pada database. Untuk melakukan debug pada database bukanlah hal yang mudah, terlebih lagi jika database yang mengalami masalah memiliki banyak tabel dan memerlukan penulisan SQL yang kompleks. Dengan menggambarkan skema database menggunakan ERD, kamu menjadi lebih mudah untuk menemukan permasalahan yang terjadi dalam database dan menyelesaikan masalah dengan mudah.</p>
+    
+    <div class="materi">
+        <h2>Komponen ERD</h2>
+    </div>
+    <p style="font-size:25px; margin-left: 15px; margin-top: 0px; margin-bottom: 0px;">ERD biasanya erat kaitannya dengan Data Flow Diagram (DFD) untuk menampilkan sebuah data store. Tujuannya adalah untuk memvisualisasikan bagaimana proses data dapat saling terhubung dan dapat mengkonstruksi data relasional. Terdapat beberapa komponen utama untuk memodelkan suatu sistem. Komponen utamanya itu antara lain.</p>
+
+    <div class="materi">
+        <h3>1. Entitas</h3>
+    </div>
+    <p style="font-size:25px; margin-left: 15px; margin-top: 0px; margin-bottom: 0px;">Entitas merupakan kumpulan objek yang dapat teridentifikasi secara unik. Di dalam ERD, entitas dilambangkan dengan bentuk persegi panjang. Kemudian, entitas lemah akan digambarkan dengan bentuk persegi panjang kecil di dalam persegi panjang yang besar. Untuk entitas lemah digunakan untuk melambangkan entitas yang memiliki hubungan dengan entitas lain (tidak unik).</p>
+
+    <div class="materi">
+        <h3>2. Atribut</h3>
+    </div>
+    <p style="font-size:25px; margin-left: 15px; margin-top: 0px; margin-bottom: 0px;">Untuk setiap entitas sendiri mempunyai atribut yang berfungsi untuk mendeskripsikan karakteristik dari entitas tersebut. Untuk penggunaan atribut kunci (key) adalah pembeda dari entitas dan atribut yang mana, diwakili dengan simbol ellips. Berikut merupakan beberapa jenis atribut yang sering digunakan:</p>
+    <br>
+    <p style="font-size:25px; margin-left: 15px; margin-top: 0px; margin-bottom: 0px;">A). Atribut Kunci
+      <br>
+      Merupakan atribut yang digunakan untuk menentukan data yang bersifat unik. Pada umumnya, data dari atribut key berbentuk angka. Contohnya NIM (Nomor Induk Mahasiswa), No. KTP, SIM, NPWP, dan lain sebagainya. </p>
+      <br>
+    <p style="font-size:25px; margin-left: 15px; margin-top: 0px; margin-bottom: 0px;">B). Atribut Simpel
+      <br>
+      Yaitu atribut yang tidak dapat dipecah lagi atau atomic dan bernilai tunggal. Contohnya adalah alamat rumah, kantor, nama penerbit, tahun terbit jurnal, dan lain – lain.</p>
+      <br>
+    <p style="font-size:25px; margin-left: 15px; margin-top: 0px; margin-bottom: 0px;">C). Atribut Multinilai (Multivalue)
+      <br>
+      Merupakan atribut yang memiliki sekelompok nilai untuk setiap entitas -nya. Contoh dari atribut multivalue adalah kumpulan nama pengarang dalam sebuah novel.</p>
+      <br>
+    <p style="font-size:25px; margin-left: 15px; margin-top: 0px; margin-bottom: 0px;">D). Atribut Gabungan (Composite)
+      <br>
+      Yaitu atribut yang berasal dari susunan atribut yang lebih kecil dalam artian tertentu. Contohnya adalah data terkait nama lengkap, yang terdiri dari nama depan, tengah, dan belakang.</p>
+      <br>
+    <p style="font-size:25px; margin-left: 15px; margin-top: 0px; margin-bottom: 0px;">E). Atribut Derivatif
+      <br>
+      Merupakan atribut yang berasal dari atribut lain dan tidak bersifat wajib untuk ditulis pada ERD. Contohnya adalah usia, selisih waktu, kelas atau ruang, dan lain sebagainya.</p>
+
+    <div class="materi">
+      <h3>3. Relasi</h3>
+    </div>
+    <p style="font-size:25px; margin-left: 15px; margin-top: 0px; margin-bottom: 0px;">Relasi adalah sebuah hubungan antara beberapa jenis entitas yang berasal dari himpunan entitas yang berbeda. Bentuk relasi ini akan dilambangkan dengan bentuk belah ketupat. Terdapat tiga jenis relasi yang digunakan dalam ERD, diantaranya adalh sebagai berikut:</p>
+    <br>
+    <p style="font-size:25px; margin-left: 15px; margin-top: 0px; margin-bottom: 0px;">A). One to One
+      <br>
+      Yang berarti, setiap entitas hanya boleh memiliki relasi dengan satu entitas yang lain. Contohnya adalah data mahasiswa dengan data NIM.</p>
+      <br>
+    <p style="font-size:25px; margin-left: 15px; margin-top: 0px; margin-bottom: 0px;">B). One to Many
+      <br>
+      Merupakan hubungan antara satu entitas dengan beberapa entitas, dan begitu pula sebaliknya. Contoh implementasinya adalah data terkait guru dengan siswa Sekolah Dasar (SD).</p>
+      <br>
+    <p style="font-size:25px; margin-left: 15px; margin-top: 0px; margin-bottom: 0px;">C). Many to Many
+      <br>
+      Merupakan hubungan antara beberapa entitas yang memiliki lebih dari satu relasi. Contohnya adalah siswa SMP dengan data terkait ekstrakurikuler yang tersedia.</p>
+ 
+    <footer>
+        <p>&copy; 2023 Ramadhan Putra A. All Rights Reserved.</p>
+    </footer>
+  </body>
+</html>

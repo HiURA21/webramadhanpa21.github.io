@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Materi 5</title>
+    <link rel="stylesheet" href="css/style.css"/>
+    
+    <style>
+        /* Reset default margin and padding */
+body, h1, h2, ul, li, p {
+  margin: 0;
+  padding: 0;
+}
+
+/* Set the background image for the body */
+body {
+  background-image: url(image/BG\ \(3\).jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  font-family: 'Lucida Sans'; /* Set a fallback font family */
+  color: #000; /* Set the default text color to black */
+}
+
+/* Style the header */
+header {
+  text-align: center;
+  padding: 20px;
+  background-color: #fff; /* Set the background color of the header */
+  opacity: 0.8; /* Set the opacity of the header */
+}
+
+/* Style the h1 in the header */
+header h1 {
+  font-size: 50px;
+  font-weight: bold;
+}
+
+/* Style the navigation menu */
+.container-navbar {
+  background-color: rgba(255, 255, 255, 0.8); /* Set a semi-transparent white background */
+  padding: 10px;
+}
+
+.container-navbar ul {
+  list-style-type: none;
+  text-align: center;
+}
+
+.container-navbar ul li {
+  display: inline;
+  margin-right: 20px;
+  font-size: 20px;
+}
+
+.container-navbar ul li a {
+  text-decoration: none;
+  color: #000; /* Set link color to black */
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Style the main content container */
+.materi {
+  text-align: center;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.8); /* Set a semi-transparent white background */
+  margin-top: 20px;
+}
+
+/* Style the heading inside the main content */
+.materi h1 {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.materi h2 {
+  font-size: 35px;
+  font-weight: bold;
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #fff;
+  opacity: 0.8;
+  position: none;
+  bottom: 0;
+  width: auto;
+  }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>BASIS DATA</h1>
+      </header>
+    <div class="container-navbar">
+        <ul>
+          <li><a href="index.html">HOME</a></li>
+          <li class="dropdown">
+            <a href="javascript:void(0)">MATERI</a>
+            <div class="dropdown-content">
+              <a href="Materi.html">Materi 1</a>
+              <a href="Materi2.html">Materi 2</a>
+              <a href="Materi3.html">Materi 3</a>
+              <a href="Materi4.html">Materi 4</a>
+              <a href="Materi5.html">Materi 5</a>
+            </div>
+          </li>
+          <li><a href="https://cvramadhanpa.000webhostapp.com/">ABOUT ME</a></li>
+        </ul>
+    </div>
+
+    <div class="materi">
+        <h1>Apa itu Denormalisasi</h1>
+    </div>    
+    <p style="font-size:25px;font-size:25px;margin-left: 15px; margin-top: 0px; margin-bottom: 0px;">Denormalisasi merupakan proses yang dilakukan pada database yang sudah dinormalisasi, dengan cara memodifikasi struktur tabel dan mengabaikan kerangkapan data (yang terkontrol) untuk meningkatkan kinerja database. Pada satu sisi denormalisasi menyebabkan adanya data redundancy yang lebih besar, bahkan dapat mengurangi fleksibilitas basis data untuk perkembangan penggunan dimasa depan. Di sisi lain, denormalisasi dapat mempercepat pemanggilan (retrieval) data, meskipun dapat memperlambat proses update data.</p>
+    <br>
+    <p style="font-size:25px;font-size:25px;margin-left: 15px; margin-top: 0px; margin-bottom: 0px;">Perbedaan normalisasi dan denormalisasi adalah terletak pada data redundancy dan kompleksitas query. Pada data redundancy, data normalisasi harus dihilangkan semaksimal mungkin sehingga apabila kita akan mengakses data dalam suatu database membutuhkan query yang kompleks. Berbeda dengan denormalisasi, denormalisasi disini tidak terlalu memikirkan tentang data redundancy sehingga dalam mengakses data lebih cepat. Secara prinsip, tidak ada metode khusus untuk melakukan denormalisasi.</p>
+    <br>
+
+    <div class="materi">
+      <h2>Denormalisasi dapat dilakukan apabila terdapat</h2>
+    </div>
+    <p style="font-size:25px;font-size:25px;margin-left: 15px; margin-top: 0px; margin-bottom: 0px;">1. Atribut yang terderivasi (atribut turunan), yaitu atribut yang nilainya bisa diperoleh dari nilai-nilai yang sudah ada pada atribut lain.</p>
+    <br>
+    <p style="font-size:25px;font-size:25px;margin-left: 15px; margin-top: 0px; margin-bottom: 0px;">2. Atribut yang berlebihan, yaitu atribut yang memiliki kode tambahan yang menunjukkan beberapa kondisi lainnya, seperti: Atribut terkodekan (encoded attribute), Atribut gabungan (concatenated attribute), Atribut tumpang-tindih (overlapping attribute), Atribut bermakna ganda (alternate attribute)</p>
+    <br>
+    <p style="font-size:25px;margin-left: 15px; margin-top: 0px; margin-bottom: 0px;">3. Tabel rekapitulasi (summary table), yaitu hasil pengolahan dari semua tabel yang ada. Pengolahan tersebut melibatkan banyak tabel sehingga akan membutuhkan waktu yang lama. Jika hal tersebut sering diakses dan diperlukan, maka perlu dibuat tabel khusus untuk menyimpan data hasil rekapitulasi tersebut.</p>
+  
+    <footer>
+      <p>&copy; 2023 Ramadhan Putra A. All Rights Reserved.</p>
+    </footer>
+  </body>
+</html>

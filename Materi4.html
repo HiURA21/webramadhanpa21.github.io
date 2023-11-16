@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Materi 4</title>
+    <link rel="stylesheet" href="css/style.css"/>
+    
+    <style>
+        /* Reset default margin and padding */
+body, h1, h2, ul, li, p {
+  margin: 0;
+  padding: 0;
+}
+
+/* Set the background image for the body */
+body {
+  background-image: url(image/BG\ \(3\).jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  font-family: 'Lucida Sans'; /* Set a fallback font family */
+  color: #000; /* Set the default text color to black */
+}
+
+/* Style the header */
+header {
+  text-align: center;
+  padding: 20px;
+  background-color: #fff; /* Set the background color of the header */
+  opacity: 0.8; /* Set the opacity of the header */
+}
+
+/* Style the h1 in the header */
+header h1 {
+  font-size: 50px;
+  font-weight: bold;
+}
+
+/* Style the navigation menu */
+.container-navbar {
+  background-color: rgba(255, 255, 255, 0.8); /* Set a semi-transparent white background */
+  padding: 10px;
+}
+
+.container-navbar ul {
+  list-style-type: none;
+  text-align: center;
+}
+
+.container-navbar ul li {
+  display: inline;
+  margin-right: 20px;
+  font-size: 20px;
+}
+
+.container-navbar ul li a {
+  text-decoration: none;
+  color: #000; /* Set link color to black */
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Style the main content container */
+.materi {
+  text-align: center;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.8); /* Set a semi-transparent white background */
+  margin-top: 20px;
+}
+
+/* Style the heading inside the main content */
+.materi h1 {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #fff;
+  opacity: 0.8;
+  position: none;
+  bottom: 0;
+  width: auto;
+  }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>BASIS DATA</h1>
+      </header>
+    <div class="container-navbar">
+        <ul>
+          <li><a href="index.html">HOME</a></li>
+          <li class="dropdown">
+            <a href="javascript:void(0)">MATERI</a>
+            <div class="dropdown-content">
+              <a href="Materi.html">Materi 1</a>
+              <a href="Materi2.html">Materi 2</a>
+              <a href="Materi3.html">Materi 3</a>
+              <a href="Materi4.html">Materi 4</a>
+              <a href="Materi5.html">Materi 5</a>
+            </div>
+          </li>
+          <li><a href="https://cvramadhanpa.000webhostapp.com/">ABOUT ME</a></li>
+        </ul>
+    </div>
+
+    <div class="materi">
+        <h1>Apa itu Normalisasi pada ERD?</h1>
+    </div>    
+    <p style="font-size:25px;margin-left: 15px; margin-top: 0px; margin-bottom: 0px;">Normalisasi dalam konteks Entity-Relationship Diagram (ERD) adalah proses merancang basis data dengan tujuan mengurangi redundansi dan meningkatkan integritas data. Tujuannya adalah untuk memastikan bahwa data disimpan dalam struktur yang efisien, sehingga menghindari masalah seperti anomali penggabungan, update anomali, dan delete anomali yang dapat terjadi dalam basis data yang tidak ternormalisasi.</p>
+    <br>
+    <p style="font-size:25px;margin-left: 15px; margin-top: 0px; margin-bottom: 0px;">Ada beberapa bentuk normalisasi yang umum digunakan, dan setiap bentuk normalisasi memiliki tingkat kompleksitas yang berbeda. Bentuk normalisasi yang paling umum adalah bentuk normalisasi pertama hingga bentuk normalisasi kelima (1NF hingga 5NF), meskipun terdapat juga bentuk normalisasi yang lebih tinggi, seperti normalisasi Domain-Key Normal Form (DKNF) dan Sixth Normal Form (6NF).</p>
+    <br>
+    <p style="font-size:25px;margin-left: 15px; margin-top: 0px; margin-bottom: 0px;">Berikut adalah ringkasan beberapa bentuk normalisasi yang umum digunakan:</p>
+    <br>
+    <p style="font-size:25px;margin-left: 15px; margin-top: 0px; margin-bottom: 0px; font-weight: bold;">1. First Normal Form (1NF):</p>
+    <p style="font-size:25px;margin-left: 15px; margin-top: 0px; margin-bottom: 0px;">Setiap kolom dalam tabel harus berisi data atomik, dan setiap baris dalam tabel harus unik. Tidak ada pengulangan data.</p>
+    <br>
+    <p style="font-size:25px;margin-left: 15px; margin-top: 0px; margin-bottom: 0px; font-weight: bold">2. Second Normal Form (2NF): </p>
+    <p style="font-size:25px;margin-left: 15px; margin-top: 0px; margin-bottom: 0px;">Tabel harus berada dalam 1NF, dan setiap kolom yang bukan kunci harus sepenuhnya bergantung pada seluruh kunci utama.</p>
+    <br>
+    <p style="font-size:25px;margin-left: 15px; margin-top: 0px; margin-bottom: 0px; font-weight: bold">3. Third Normal Form (3NF): </p>
+    <p style="font-size:25px;margin-left: 15px; margin-top: 0px; margin-bottom: 0px;">Tabel harus berada dalam 2NF, dan setiap kolom yang bukan kunci tidak boleh memiliki dependensi transitif pada kunci utama.</p>
+    <br>
+    <p style="font-size:25px;margin-left: 15px; margin-top: 0px; margin-bottom: 0px;font-weight: bold">4. Boyce-Codd Normal Form (BCNF): </p>
+    <p style="font-size:25px;margin-left: 15px; margin-top: 0px; margin-bottom: 0px;">Tabel harus memenuhi persyaratan 3NF, dan setiap atribut non-kunci harus bergantung sepenuhnya pada kunci utama. Ini adalah bentuk normalisasi yang lebih ketat daripada 3NF.</p>
+    <br>
+    <p style="font-size:25px;margin-left: 15px; margin-top: 0px; margin-bottom: 0px;font-weight: bold">5. Fourth Normal Form (4NF) dan Fifth Normal Form (5NF): </p>
+    <p style="font-size:25px;margin-left: 15px; margin-top: 0px; margin-bottom: 0px;">Bentuk normalisasi yang lebih tinggi yang memerlukan desain basis data yang lebih kompleks untuk mengatasi situasi yang lebih rumit seperti multivalued dependencies dan join dependencies.</p>
+    <br>
+    <p style="font-size:25px;margin-left: 15px; margin-top: 0px; margin-bottom: 0px;">Normalisasi adalah proses yang penting dalam merancang basis data yang efisien dan dapat membantu menghindari masalah seperti anomali dan inkonsistensi data. Namun, terlalu banyak normalisasi juga dapat menghasilkan jumlah tabel yang besar dan kompleksitas yang sulit dikelola, sehingga perlu dilakukan keseimbangan yang tepat dalam merancang basis data.</p>
+    
+    <footer>
+      <p>&copy; 2023 Ramadhan Putra A. All Rights Reserved.</p>
+    </footer>
+  </body>
+</html>

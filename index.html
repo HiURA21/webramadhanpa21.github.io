@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GO-Blog</title>
+    <link rel="stylesheet" href="css/style.css" />
+
+    <style>
+        /* Reset default margin and padding */
+        body, h1, h2, ul, li, p {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Set the background image for the body */
+        body {
+            background-image: url(image/BG\ \(3\).jpg);
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: cover;
+            font-family: 'Lucida Sans'; /* Set a fallback font family */
+            color: #000; /* Set the default text color to black */
+        }
+
+        /* Style the header */
+        header {
+            text-align: center;
+            padding: 20px;
+            background-color: #fff; /* Set the background color of the header */
+            opacity: 0.8; /* Set the opacity of the header */
+        }
+
+        /* Style the h1 in the header */
+        header h1 {
+            font-size: 50px;
+            font-weight: bold;
+        }
+
+        /* Style the navigation menu */
+        .container-navbar {
+            background-color: rgba(255, 255, 255, 0.8); /* Set a semi-transparent white background */
+            padding: 10px;
+        }
+
+        .container-navbar ul {
+            list-style-type: none;
+            text-align: center;
+        }
+
+        .container-navbar ul li {
+            display: inline;
+            margin-right: 20px;
+            font-size: 20px;
+        }
+
+        .container-navbar ul li a {
+            text-decoration: none;
+            color: #000; /* Set link color to black */
+        }
+
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        /* Style the main content container */
+        .container-content {
+            text-align: center;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.8); /* Set a semi-transparent white background */
+            margin-top: 20px;
+        }
+
+        /* Style the heading inside the main content */
+        .ubp {
+            font-size: 33px;
+            font-weight: bold;
+        }
+
+        /* Style the image inside the main content */
+        .img-content {
+            width: 180px;
+            height: auto;
+            margin-top: 20px;
+        }
+
+        /* Style the dosenpengampu container */
+        .dosenpengampu {
+            text-align: center;
+            padding: 10px;
+            background-color: rgba(255, 255, 255, 0.8); /* Set a semi-transparent white background */
+            margin-top: 20px;
+            border-radius: 10px;
+        }
+
+        .video {
+            text-align: center;
+            margin: 100px;
+        }
+
+        .video h3 {
+            font-size: 25px;
+            font-family: 'Lucida Sans';
+            font-style: bold;
+            margin-bottom: 50PX;
+        }
+
+        .video li {
+            list-style-type: numeric;
+            color: black;
+            font-weight: bold;
+            padding: 10px 20px 15px 30px; /* Atas, Kanan, Bawah, Kiri */
+            margin: 10px 20px 15px 30px; /* Atas, Kanan, Bawah, Kiri */
+            text-align: justify;
+        }
+
+        /* Style the button */
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #f0f0f0;
+            color: black;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #fff;
+            opacity: 0.8;
+            position: none;
+            bottom: 0;
+            width: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>BASIS DATA</h1>
+    </header>
+    <div class="container-navbar">
+        <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li class="dropdown">
+                <a href="javascript:void(0)">MATERI</a>
+                <div class="dropdown-content">
+                    <a href="Materi.html">Materi 1</a>
+                    <a href="Materi2.html">Materi 2</a>
+                    <a href="Materi3.html">Materi 3</a>
+                    <a href="Materi4.html">Materi 4</a>
+                    <a href="Materi5.html">Materi 5</a>
+                </div>
+            </li>
+            <li><a href="https://cvramadhanpa.000webhostapp.com/">ABOUT ME</a></li>
+        </ul>
+    </div>
+
+    <div class="container-content">
+        <h2 class="ubp">Universitas Buana Perjuangan Karawang</h2>
+        <br><br>
+        <a href="https://elearning.ubpkarawang.ac.id/">
+            <img src="image/Logo_UBPK.png" class="img-content" alt="Logo UBP" />
+        </a>
+    </div>
+
+    <div>
+        <h2 class="dosenpengampu" style="text-align: center; font-size: 25px">Dosen Pengampu Mata Kuliah Basis Data</h2>
+
+        <img class="dosenpengampu" src="image/Dosen BD.jpg" alt="Dosen BD" width="200" height="200" />
+        <br>
+        <a href="https://business.google.com/website/adirpid">
+            <p style="text-align:center; color:black; font-weight:bold; font-size:21px; font-family: 'Lucida Sans';">Adi Rizky Pratama M.Kom</p>
+        </a>
+    </div>
+
+    <div class="video">
+        <h3>Di bawah ini video di Youtube Mengenai</h3>
+        <ol>
+            <li><a href="https://youtu.be/U76aqAaBraE" class="button">Tutorial Menginstall DBMS (MySQL)</a></li>
+            <li><a href="https://youtu.be/E8JgAsAmQ5g" class="button">Membuat ERD Apotek</a></li>
+            <li><a href="https://youtu.be/Qi2uU1pdTc8" class="button">Membuat ERD Perpustakaan</a></li>
+            <li><a href="https://youtu.be/0-bHAP8Brus" class="button">Membuat 5 ERD Tentang Intersection</a></li>
+            <li><a href="https://youtu.be/uOou7KhtVoY" class="button">Membuat ERD Perpustakaan Dengan Penjelasan Normalisasi</a></li>
+        </ol>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 Ramadhan Putra A. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
